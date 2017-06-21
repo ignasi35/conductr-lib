@@ -6,17 +6,22 @@ object Version {
   val akka23Http         = "2.0.4"
   val akka23Stream       = "2.0.4"
   val akka23Sse          = "1.5.0"
+  val akka23ContribExtra = "2.0.2"
   val akka24             = "2.4.17"
   val akka24Sse          = "1.11.0"
+  @deprecated("use akka10Http instead", "")
   val akka24Http         = "10.0.3"
-  val akka23ContribExtra = "2.0.2"
+  val akkaHttp10         = akka24Http
   val akka24ContribExtra = "3.3.2"
+  val akka25             = "2.5.3"
+  val akka25Sse          = "3.0.0"
   val java8Compat        = "0.7.0"
   val junit              = "4.12"
   val play23             = "2.3.10"
   val play24             = "2.4.10"
   val play25             = "2.5.12"
-  val lagom1             = "1.3.0-RC2"
+  val play26             = "2.6.0-RC2"
+  val lagom1             = "1.3.0"
   val reactiveStreams    = "1.0.0"
   val typesafeConfig     = "1.3.0"
   val scala              = "2.11.8"
@@ -34,6 +39,11 @@ object Library {
   val akka24HttpTestkit  = "com.typesafe.akka"      %% "akka-http-testkit"              % Version.akka24Http
   val akka24Testkit      = "com.typesafe.akka"      %% "akka-testkit"                   % Version.akka24
   val akka24Sse          = "de.heikoseeberger"      %% "akka-sse"                       % Version.akka24Sse
+  val akka25Cluster      = "com.typesafe.akka"      %% "akka-cluster"                   % Version.akka25
+  val akka25Testkit      = "com.typesafe.akka"      %% "akka-testkit"                   % Version.akka25
+  val akkaHttp10         = "com.typesafe.akka"      %% "akka-http"                      % Version.akkaHttp10
+  val akkaHttp10Testkit  = "com.typesafe.akka"      %% "akka-http-testkit"              % Version.akkaHttp10
+  val akka25Sse          = "de.heikoseeberger"      %% "akka-sse"                       % Version.akka25Sse
   val akka23ContribExtra = "com.typesafe.akka"      %% "akka-contrib-extra"             % Version.akka23ContribExtra
   val akka24ContribExtra = "com.typesafe.akka"      %% "akka-contrib-extra"             % Version.akka24ContribExtra
   val lagom1ClientJavadsl  = "com.lightbend.lagom"  %% "lagom-javadsl-client"           % Version.lagom1
@@ -51,6 +61,9 @@ object Library {
   val play25Test         = "com.typesafe.play"      %% "play-test"                      % Version.play25
   val play25Json         = "com.typesafe.play"      %% "play-json"                      % Version.play25
   val play25Ws           = "com.typesafe.play"      %% "play-ws"                        % Version.play25
+  val play26Test         = "com.typesafe.play"      %% "play-test"                      % Version.play26
+  val play26Json         = "com.typesafe.play"      %% "play-json"                      % Version.play26
+  val play26Ws           = "com.typesafe.play"      %% "play-ws"                        % Version.play26
   val typesafeConfig     = "com.typesafe"           %  "config"                         % Version.typesafeConfig
   val scalaTest          = "org.scalatest"          %% "scalatest"                      % Version.scalaTest
 }
